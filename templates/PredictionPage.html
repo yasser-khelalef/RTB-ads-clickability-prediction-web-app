@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">REMBEMBEM Programming</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample01"
+            aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample01" style>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/predict">Predict</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Contact us</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="https://www.facebook.com/Theyouknowwho/">Facebook</a>
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/yasser-khelalef/">LinkedIn</a>
+                        <a class="dropdown-item" href="#">Email : yasser.khelalef@g.enp.edu.dz</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="masthead mb-auto">
+            <div class="inner">
+                
+            </div>
+        </header>
+        <br>
+        <br>
+        <main class="text-center" role="main" class="inner cover">
+            <h1 class="cover-heading">Real Time Bidding (RTB) adds' clickability prediction model.</h1>
+            <br>
+            <p class="lead">Now, you need to upload your csv file to the server.
+                Make sure it contains all the following columns : bidfloor, verticals_0, verticals_1, verticals_2, vertical_3,
+                device_language, device_model, support_type, bid_price and won_price.
+            </p>
+            <form class="" action="predict" method="POST" enctype="multipart/form-data">
+                <input type="file" class='costum-file_input' name="csvfile" id="csvfile" accept=".csv">
+                <input class="btn btn-success btn-secondary" type='submit' name="" value="Submit">
+            </form>
+        </main>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                
+        </footer>
+    </div>
+    
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
